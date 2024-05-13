@@ -9,8 +9,10 @@ def koch_snowflake(t, x1, y1, x2, y2, depth):
     else:
         xa = x1 + (x2 - x1) / 3
         ya = y1 + (y2 - y1) / 3
+
         xb = x1 + 2 * (x2 - x1) / 3
         yb = y1 + 2 * (y2 - y1) / 3
+        
         xc = (x1 + x2) / 2 - (y2 - y1) * (3**0.5) / 6
         yc = (y1 + y2) / 2 + (x2 - x1) * (3**0.5) / 6
 
@@ -24,10 +26,17 @@ t.speed(0)
 
 depth = 2 # Change this value to specify the depth of recursion
 size = 300
+
+#   x1 = -size/2 ,  y1 =  size * √3/6
+#   x2 = size/2  ,  y2 =  size * √3/6
+#   x3 = 0       ,  y3 = -size * √3/3
+
 x1 = -size / 2
 y1 = size * (3**0.5) / 6
+
 x2 = size / 2
 y2 = size * (3**0.5) / 6
+
 x3 = 0
 y3 = -size * (3**0.5) / 3
 

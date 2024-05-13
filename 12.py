@@ -32,7 +32,7 @@ def sierpinski(t, x, y, size, depth):
 t = turtle.Turtle()
 t.speed(0)
 
-change_depth = 4 
+change_depth = 4
 sierpinski(t,-200,-200,400,change_depth)
 
 turtle.done()
